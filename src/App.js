@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Cat from "./Cat.js";
 
 class App extends React.Component {
   state = {
@@ -27,13 +28,14 @@ class App extends React.Component {
             <span className="loader__text">Loading...</span>
           </div>
         ) : (
-          <div className="cats">
-            <h3>Loaded</h3>
-            <div>
+          <div>
+            <div className="cats">
               {cats.map((cat) => (
-                <img key={cat.id} src={cat.url} alt="cat" />
+                <Cat key={cat.id} id={cat.id} imageURL={cat.url} />
               ))}
             </div>
+
+            <button onClick={this.getImageUrl}>NEW image</button>
           </div>
         )}
       </section>
