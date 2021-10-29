@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Cat from "./Cat.js";
+import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -9,6 +10,7 @@ class App extends React.Component {
   };
 
   getImageUrl = async () => {
+    this.setState({ isLoading: true });
     const { data } = await axios.get(
       "https://api.thecatapi.com/v1/images/search"
     );
@@ -35,7 +37,9 @@ class App extends React.Component {
               ))}
             </div>
 
-            <button onClick={this.getImageUrl}>NEW image</button>
+            <button className="newimgbutton" onClick={this.getImageUrl}>
+              ✨ NEW image
+            </button>
           </div>
         )}
       </section>

@@ -1,4 +1,9 @@
 .cat img {
   width: 50%;
-  height: auto;
+  height: 40%;
+  border-radius: 3%;
+}
+
+.cats {
+  text-align: center;
 }
