@@ -67,5 +67,10 @@
   .cats>div:nth-child(9) {
     grid-column: span 2;
   }
+}
 
+@media screen and (max-height: 667px) {
+  .cats {
+    grid-auto-rows: 8em;
+  }
 }
