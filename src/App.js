@@ -12,7 +12,7 @@ class App extends React.Component {
   getImageUrl = async () => {
     this.setState({ isLoading: true });
     const { data } = await axios.get(
-      "https://api.thecatapi.com/v1/images/search"
+      "https://api.thecatapi.com/v1/images/search?limit=10"
     );
     this.setState({ cats: data, isLoading: false });
   };
@@ -33,7 +33,8 @@ class App extends React.Component {
           <div>
             <div className="cats">
               {cats.map((cat) => (
-                <Cat key={cat.id} id={cat.id} imageURL={cat.url} />
+                <Cat key={cat.id} id={cat.id}  imageURL={cat.url} />
+                
               ))}
             </div>
 

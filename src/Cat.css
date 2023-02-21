@@ -1,9 +1,11 @@
 .cat img {
-  width: 80%;
-  height: 40%;
-  border-radius: 3%;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  border-radius: 0.3rem;
 }
 
-.cats {
+.cat {
   text-align: center;
 }

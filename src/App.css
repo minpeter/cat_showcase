@@ -11,7 +11,7 @@
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  border-radius: 7%;
+  border-radius: 0.5rem;
 }
 
 .loader__text {
@@ -20,4 +20,13 @@
   margin-top: 20px;
   display: block;
   margin: 0 auto;
+}
+
+
+.cats {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 15em 15em;
+  grid-gap: 10px;
 }

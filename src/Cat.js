@@ -4,7 +4,7 @@ import "./Cat.css";
 
 function Cat({ id, imageURL }) {
   return (
-    <div className="cat">
+    <div className="cat" id={id}>
       <img src={imageURL} alt={id} />
     </div>
   );
