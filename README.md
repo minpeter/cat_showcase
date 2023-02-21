@@ -1,10 +1,11 @@
 # cat showcase
 
-리엑트 배운지 5일 만에 만든 사이트입니다.  
-이미지는 [여기](https://api.thecatapi.com/v1/images/search) 제공하는 api을 사용합니다.
+귀여운 고양이 사진 10장을 화면에 보여줍니다 🐈‍⬛🐈‍
 
-~~아마도 나아ㅏㅏ중에 보면 엄청 이상한 방식으로 프로그래밍해둔것처럼 보이겠지?~~
+React 배운지 5일 만에 만든 사이트입니다.  
+이미지는 [thecatapi.com](https://thecatapi.com) 제공하는 api을 사용합니다.  
 
-## 사이트 데모
-
+## site demo
 [https://minpeter.github.io/cat_showcase/](https://minpeter.github.io/cat_showcase/)
+
+![image](https://user-images.githubusercontent.com/62207008/220426908-c020d668-8278-4238-a24c-bbf30feff05e.png)
