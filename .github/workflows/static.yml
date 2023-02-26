@@ -41,9 +41,9 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
     
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
       - name: Build
-        run: npm run build
+        run: yarn build
         
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './public'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
